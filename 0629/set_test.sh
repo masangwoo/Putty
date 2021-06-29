@@ -2,6 +2,8 @@
 
 set $(date)
 
+trap 'echo "$LINENO : VAL=$VAL"' DEBUG
+
 for VAL in $@
 
 do
